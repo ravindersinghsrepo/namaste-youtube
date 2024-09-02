@@ -1,0 +1,35 @@
+episode 1 
+built the UI 
+Built the functionality of collapsing the sidebar 
+-> redux store build for creating a global level store of state 
+for toggle functionality only 
+also used live apis for rendering the home page data and the watchpage data . 
+on watch page we showed embeded iframe only 
+ALso added routes for home page by clicking the home in the sidebar and watchpage 
+
+episode 2
+
+for implementing the search functionality  : 
+
+debouncing concept 
+
+key-i
+render the component
+useEffect called ; 
+start timer attached to a callback function which makes an api call after 200ms
+
+key-ip
+destroys the component(useffect return method); 
+ - > cleanup method is called everytime the function is re rendered. (provided we made useffect call in previous render cycle); 
+ -> in the cleanup method we called a clearTimeout method .  
+ this clearTimeout method executes if user types somthing before 200ms time. & therefore api call is declined 
+re-render the component
+useEffect called 
+start timer => makes api call after 200ms
+
+also implemented comments page in the watch page and these comments are nested comments 
+
+IMPORTANT to learn deep about the behaviour of eseEffect and redux toolkit
+setInterval clearinterval setTImeout and clearTimeout
+
+splice method 
